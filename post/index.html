@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <div class="container">
+
+<form id="formularzKontaktowy" class="form-horizontal" action="mail.php" method="post">
+
+  <div class="control-group">
+    <label class="control-label" for="inputEmail">Email</label>
+    <div class="controls">
+      <input type="text" name="email" class="input-xlarge" id="inputEmail" placeholder="Email">
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label" for="inputSubject">Temat</label>
+    <div class="controls">
+      <input type="text" name="subject" class="input-xlarge" id="inputSubject" placeholder="Temat wiadomości">
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label" for="inputMessage">Wiadomość</label>
+    <div class="controls">
+      <textarea type="text" name="message" class="input-xlarge" id="inputMessage" placeholder="Twoja wiadomość" rows="6"></textarea>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <div class="controls">
+      <button type="submit" class="btn btn-primary">Wyślij wiadomość</button>
+    </div>
+  </div>
+
+</form>
+
+        </div> <!-- /container -->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="js/bootstrap.min.js"></script>
+
+<script>
+$("#formularzKontaktowy").validate({
+     errorClass: "text-error",
+  rules: {
+    subject: "required",
+    message: "required",
+    email: {
+      required: true,
+      email: true
+    }
+  },
+  messages: {
+    subject: "Nie wpisałeś tematu wiadomości",
+    message: "Nie wpisałeś treści wiadomości",
+    email: {
+      required: "Nie podałeś swojego adresu e-mail",
+      email: "Błędny format adresu e-mail"
+    }
+  }
+});
+</script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
