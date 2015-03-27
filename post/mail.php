@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /*sprawdzenie wypełnienia wszystkich pól*/
 }elseif(!empty($_POST['imienazwisko']) && !empty($_POST['email']) && !empty($_POST['trescwiadomosci'])){
 /* Funkcja sprawdzająca poprawność E-Maila */
@@ -10,8 +10,8 @@ function SprawdzEmail($email) {
 }
 if(SprawdzEmail($_POST['email'])){
 /* Tworzymy szkielet wysyłanej wiadomości */
-/*$adresemail='wybierznazwe.natalia@gmail.com'; /* Wpisz swój adres e-mail */
-$adresemail='nataliaaaxd@wp.pl';
+$adresemail='wybierznazwe.natalia@gmail.com'; /* Wpisz swój adres e-mail */
+//$adresemail='nataliaaaxd@wp.pl';
 /* Wybierz kodowanie znaków usuwając // */
 //$charset = 'iso-8859-2';
 $charset = 'utf-8';
