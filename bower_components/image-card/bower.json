@@ -1,0 +1,34 @@
+{
+  "name": "image-card",
+  "version": "0.3.3",
+  "authors": [
+    "Emanuel Kluge"
+  ],
+  "description": "A Custom Element for an Image Card",
+  "main": [
+    "dist/scripts/image-card.js",
+    "dist/styles/image-card.css"
+  ],
+  "keywords": [
+    "custom",
+    "element",
+    "x-tag",
+    "image",
+    "carousel",
+    "web-components"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/herschel666/image-card",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "demo",
+    "Gruntfile.coffee",
+    "karma.conf.js"
+  ],
+  "dependencies": {
+    "x-tag-core": "~0.9.7"
+  }
+}
