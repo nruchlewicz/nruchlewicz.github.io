@@ -23,6 +23,7 @@
   "dependencies": {
     "polymer": "Polymer/polymer#0.5",
     "basic-slideshow": "basic-web-components/basic-slideshow#master",
-    "mark-down": "robdodson/mark-down#~0.6.3"
+    "mark-down": "robdodson/mark-down#~0.6.3",
+    "x-2048": "felquis/x-2048#master"
   }
 }
