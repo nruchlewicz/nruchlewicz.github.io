@@ -88,6 +88,16 @@
                 <p class="lead">
                     by <a href="index.php">Natalia </a><span class="glyphicon glyphicon-time"></span> 21 marzec 2015, 16:00</p>
                 <hr>
+                <basic-framed-content>
+                <button onclick="document.querySelector('#sequence').previous()">Previous</button>
+  		<button onclick="document.querySelector('#sequence').next()">Next</button>
+  
+                <basic-sequence id="sequence" effect="reveal" wrapAround="true">
+    		<img src="img/pierniczki.jpg">
+    		<img src="img/piernik.jpg">
+    		<img src="img/piernik1.jpg">
+		</basic-sequence>
+		</basic-framed-content>
                 <img class="img-responsive" src="img/pierniczki.jpg" alt="">
     
                 <p><span style="font-size: 30px; font-weight: bold; font-style: italic; color: #cc00cc;">P</span>ierniczki kojarzą się głównie ze świętami, ale smakują równie dobrze każdą porą roku. Moga być nadziane, polane czekoladą, lukrem albo posypane cukrem pudrem. Przygotowane z mąki orkiszowej i posłodzone miodem są zdrowsze, ale równie smaczne.</p>
