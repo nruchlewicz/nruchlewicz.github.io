@@ -8,6 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+	<link rel="import" href="bower_components/basic-slideshow/basic-slideshow.html">
+	<link href="bower_components/basic-slideshow/basic-slideshow.html">
+	<script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+<link rel="import" href="bower_components/basic-framed-content/basic-framed-content.html">
 
     <title>Smacznego!</title>
 
@@ -23,6 +27,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<link rel="import" href="components/polymer/polymer.html">
 
 </head>
 
@@ -58,7 +63,63 @@
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
-    </nav>
+    </nav><basic-slideshow>
+	 <img src="img/herbata1.jpg">
+	 <img src="img/herbtaa.jpg">
+	 <img src="img/jak1.jpg">
+	 <img src="img/jag2.jpg">
+	 <img src="../basic-sequence/images/image5.jpg">
+	</basic-slideshow>
+	<!-- Carousel
+    ================================================== -->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+	  <center>
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="post/img/indeks2.png" alt="First slide" width="80%">
+          <div class="container">
+            <div class="carousel-caption">
+              <!-- <h1 class="napis"><a href="map.html">Tabela Porównawcza</a></h1> -->
+              <p><a class="btn btn-lg btn-primary" href="post/herbata.html" role="button">Herbata</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="post/img/indeks1.png" alt="Second slide" width="80%">
+          <div class="container">
+            <div class="carousel-caption">
+              <!-- <h1 class="napis"><a href="map.html">Program TV</a></h1> -->
+              <p><a class="btn btn-lg btn-primary" href="post/pierniczki.html" role="button">Pierniczki</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="post/img/indeks3.png" alt="Third slide" width="80%">
+          <div class="container">
+            <div class="carousel-caption">
+              <!-- <h1 class="napis"><a href="map.html">Mapka</a></h1> -->
+              <p><a class="btn btn-lg btn-primary" href="post/zupa.html" role="button">Zupa pomidorowa</a></p>            
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+	  </center>
+     </div><!-- /.carousel -->
+    
 
     <!-- Page Content -->
     <div class="container">
@@ -154,10 +215,10 @@
 <a href="post/fondant.html" class="thumbnail">
 <img src="img/fondant.jpg" alt="...">
 </a>
-</div>
-</div>
+</div></div>
 
                     <!-- /.input-group -->
+
                 </div>
 
                 <!-- Blog Categories Well -->
@@ -191,6 +252,8 @@
 
                 <!-- Side Widget Well -->
                       </div>
+					  
+					  
 
         </div>
         <!-- /.row -->
@@ -199,9 +262,10 @@
 
         <!-- Footer -->
         <footer>
+		
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Ruchlewicz Natalia 2014</p>
+                    <p>Copyright &copy; Ruchlewicz Natalia 2015</p>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -213,6 +277,8 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+	 <script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.3.1/platform.js"></script>
+ <script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.3.1/polymer.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>

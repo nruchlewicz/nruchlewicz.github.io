@@ -1,0 +1,27 @@
+{
+  "name": "my-project",
+  "version": "0.0.0.",
+  "homepage": "https://github.com/nruchlewicz/nruchlewicz.github.io",
+  "authors": [
+    "n.ruchlewicz@wp.pl"
+  ],
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#0.5",
+    "basic-slideshow": "basic-web-components/basic-slideshow#master"
+  }
+}

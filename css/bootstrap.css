@@ -5,6 +5,8 @@
  */
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+.blue { color: blue; }
+.big { font-size: 3.4em; }
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
